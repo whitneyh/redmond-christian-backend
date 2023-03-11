@@ -18,6 +18,8 @@ repositories {
 dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-function-web:4.0.1")
     implementation("org.springframework.cloud:spring-cloud-function-kotlin:4.0.1")
+    implementation("org.springframework.cloud:spring-cloud-starter-openfeign:4.0.1")
+    implementation("org.springframework.cloud:spring-cloud-starter-loadbalancer:4.0.1")
 }
 
 tasks.withType<KotlinCompile> {

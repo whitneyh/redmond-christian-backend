@@ -2,14 +2,11 @@ package org.redmondchristian.teams
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.context.annotation.Bean
+import org.springframework.cloud.openfeign.EnableFeignClients
 
 @SpringBootApplication
-open class Application {
-    @Bean
-    open fun kotlinFunction(): (String) -> String {
-        return { it.toUpperCase() }
-    }
+@EnableFeignClients
+class Application {
 }
 
 fun main(args: Array<String>) {
